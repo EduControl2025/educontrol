@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos - Escuela XYZ</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+            color: #4a90e2;
+        }
+
+        h3 {
+            color: #4a90e2;
+        }
+
+        /* Menú de navegación */
+        nav {
+            background-color: #4a90e2;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Contenedor de cursos */
+        .cursos-container {
+            width: 80%;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 2 columnas, se adapta a la pantalla */
+            gap: 20px;
+            text-align: center;
+        }
+
+        .cursos-container div {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .cursos-container div h3 {
+            margin-bottom: 15px;
+        }
+
+        /* Estilo para los enlaces de los cursos */
+        .cursos-container ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .cursos-container ul li {
+            margin: 10px 0;
+        }
+
+        .cursos-container ul li a {
+            display: inline-block;
+            background-color: #4a90e2;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 18px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .cursos-container ul li a:hover {
+            background-color: #3a7bc5;
+            transform: translateY(-3px);
+        }
+
+        .cursos-container ul li a:active {
+            transform: translateY(1px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Pie de página */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4a90e2;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <a href="../index.html">Inicio</a>
+        <a href="cursos.html">Cursos</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <h2>Selecciona un Curso</h2>
+
+    <div class="cursos-container">
+        <div>
+            <h3>Primero</h3>
+            <ul>
+                <li><a href="asistencias/1ro/asis_1ro_A.html">1º A</a></li>
+                <li><a href="asistencias/1ro/asis_1ro_B.html">1º B</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Segundo</h3>
+            <ul>
+                <li><a href="asistencias/2do/asis_2do_A.html">2º A</a></li>
+                <li><a href="asistencias/2do/asis_2do_B.html">2º B</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Tercero</h3>
+            <ul>
+                <li><a href="asistencias/3ro/asis_3ro_A.html">3º A</a></li>
+                <li><a href="asistencias/3ro/asis_3ro_B.html">3º B</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Cuarto</h3>
+            <ul>
+                <li><a href="asistencias/4to/asis_4to_A.html">4º A</a></li>
+                <li><a href="asistencias/4to/asis_4to_B.html">4º B</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Quinto</h3>
+            <ul>
+                <li><a href="asistencias/5to/asis_5to_A.html">5º A</a></li>
+                <li><a href="asistencias/5to/asis_5to_B.html">5º B</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Sexto</h3>
+            <ul>
+                <li><a href="asistencias/6to/asis_6to_A.html">6º B</a></li>
+                <li><a href="asistencias/6to/asis_6to_B.html">6º A</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 Escuela XYZ. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
