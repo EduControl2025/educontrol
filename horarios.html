@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horarios de la Escuela</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 600px;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #4A90E2;
+            margin-bottom: 20px;
+        }
+        .year-list {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+        .year-list li {
+            margin: 15px 0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .year-list a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #4A90E2;
+            font-size: 1.3em;
+            padding: 15px 25px;
+            border-radius: 5px;
+            display: inline-block;
+            width: 200px;
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .year-list a:hover {
+            background-color: #357ABD;
+            transform: translateY(-5px);
+        }
+        .year-list li:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            font-size: 1.2em;
+            color: #555;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+            border: 2px solid #4A90E2;
+            transition: color 0.3s ease, border-color 0.3s ease;
+        }
+        .back-link:hover {
+            color: #4A90E2;
+            border-color: #4A90E2;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Horarios de la Escuela</h1>
+        <ul class="year-list">
+            <li><a href="horariosdealumnos/1ro.html">1er Año</a></li>
+            <li><a href="horariosdealumnos/2do.html">2do Año</a></li>
+            <li><a href="horariosdealumnos/3er.html">3er Año</a></li>
+            <li><a href="horariosdealumnos/4to.html">4to Año</a></li>
+            <li><a href="horariosdealumnos/5to.html">5to Año</a></li>
+            <li><a href="horariosdealumnos/6to.html">6to Año</a></li>
+        </ul>
+        <a href="index.html" class="back-link">Volver a la página principal</a>
+    </div>
+
+</body>
+</html>
+
