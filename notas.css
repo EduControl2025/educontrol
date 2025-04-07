@@ -87,3 +87,17 @@ h2 {
     font-size: 18px;
     margin-top: 10px;
 }
+
+
+#diseño {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 12px;
+}
+
+#diseño .hidden {
+    color: #e3f2fd;
+    user-select: none;
+    pointer-events: none;
+}
