@@ -54,6 +54,7 @@
             width: 200px;
             text-align: center;
             transition: background-color 0.3s ease, transform 0.3s ease;
+            position: relative;
         }
         .year-list a:hover {
             background-color: #357ABD;
@@ -63,6 +64,28 @@
             transform: translateY(-10px);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
+        .tooltip {
+            visibility: hidden;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.4); 
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            padding: 2px 5px; 
+            font-size: 0.7em; 
+            bottom: 120%; 
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+            z-index: 100;
+        }
+
+        .year-list a:hover .tooltip {
+            visibility: visible;
+            opacity: 1; 
+        }
+
         .back-link {
             display: inline-block;
             margin-top: 30px;
@@ -89,7 +112,12 @@
             <li><a href="horariosdealumnos/1ro.html">1er Año</a></li>
             <li><a href="horariosdealumnos/2do.html">2do Año</a></li>
             <li><a href="horariosdealumnos/3er.html">3er Año</a></li>
-            <li><a href="horariosdealumnos/4to.html">4to Año</a></li>
+            <li>
+                <a href="horariosdealumnos/4to.html">
+                    4to Año
+                    <span class="tooltip">cars</span>
+                </a>
+            </li>
             <li><a href="horariosdealumnos/5to.html">5to Año</a></li>
             <li><a href="horariosdealumnos/6to.html">6to Año</a></li>
         </ul>
@@ -98,4 +126,3 @@
 
 </body>
 </html>
-
